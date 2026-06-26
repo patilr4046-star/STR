@@ -1,0 +1,18 @@
+{
+  "name": "sahyadri-tiger-reserve",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp -R \"Tiger walk-jpg\" dist/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lenis": "^1.0.45"
+  }
+}

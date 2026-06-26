@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahyadri Tiger Reserve | Northern Western Ghats</title>
+  <meta name="description" content="Discover Sahyadri Tiger Reserve in the Western Ghats of Maharashtra. Explore its rich biodiversity, landscape, ecotourism zones, and conservation initiatives.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo">STR</div>
+      <div class="loader-bar-container">
+        <div id="loader-progress-bar" class="loader-progress-bar"></div>
+      </div>
+      <div id="loader-status" class="loader-status">Initializing Reserve Entry... 0%</div>
+    </div>
+  </div>
+
+  <!-- Intro Experience -->
+  <div id="intro-container" class="intro-viewport">
+    <video id="intro-video" src="/View_over_jungle_realistic_202606261446.mp4" muted playsinline></video>
+    <div class="intro-overlay">
+      <button id="skip-intro-btn" class="skip-btn" aria-label="Skip Intro Video">
+        <span>Skip Intro</span>
+        <svg viewBox="0 0 24 24" class="skip-icon">
+          <path d="M5 4l10 8-10 8zM19 5v14h2V5z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Website Container (Fades in after Intro) -->
+  <div id="main-app" class="app-container hidden-state">
+    
+    <!-- Navigation Header -->
+    <header class="main-header">
+      <div class="header-logo">
+        <a href="#hero" class="logo-link">
+          <span class="logo-str">STR</span>
+          <span class="logo-full">Sahyadri</span>
+        </a>
+      </div>
+      
+      <nav class="desktop-nav">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#scrolly-section" class="nav-link">The Walk</a>
+        <a href="#biodiversity" class="nav-link">Biodiversity</a>
+        <a href="#ecotourism" class="nav-link">Ecotourism</a>
+        <a href="#conservation" class="nav-link">Conservation</a>
+        <a href="#inquiry" class="nav-link booking-btn">Plan Visit</a>
+      </nav>
+
+      <button id="menu-toggle-btn" class="menu-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="mobile-menu-drawer">
+      <nav class="mobile-nav">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#scrolly-section" class="mobile-nav-link">The Walk</a>
+        <a href="#biodiversity" class="mobile-nav-link">Biodiversity</a>
+        <a href="#ecotourism" class="mobile-nav-link">Ecotourism</a>
+        <a href="#conservation" class="mobile-nav-link">Conservation</a>
+        <a href="#inquiry" class="mobile-nav-link mobile-booking-btn">Plan Visit</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-tagline reveal-text">The Wild Heart of the Northern Western Ghats</div>
+        <h2 class="hero-title reveal-text">SAHYADRI</h2>
+        <h3 class="hero-subtitle reveal-text">TIGER RESERVE</h3>
+        <p class="hero-desc reveal-text">Discover one of India's most spectacular protected landscapes, where ancient forests, rare wildlife, and breathtaking biodiversity come together. Experience the untamed beauty through an immersive journey into nature.</p>
+        <div class="hero-scroll-indicator">
+          <span class="scroll-text">Scroll to Enter</span>
+          <div class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="grid-2col">
+          <div class="about-info-panel reveal-left">
+            <span class="section-tag">About the Reserve</span>
+            <h2 class="section-title">Northern Western Ghats Protected Corridor</h2>
+            <p class="section-paragraph">
+              Sahyadri Tiger Reserve is located in the Western Ghats of Maharashtra and is the northern-most Tiger Reserve in the Western Ghats. It was officially declared a Tiger Reserve on 5 January 2010 under Project Tiger.
+            </p>
+            <p class="section-paragraph">
+              The reserve protects one of India's richest ecosystems and serves as an important wildlife corridor connecting various protected forests across the Sahyadri mountain range.
+            </p>
+            <p class="section-paragraph">
+              The reserve is known for its dense evergreen forests, rolling hills, deep valleys, rivers, waterfalls, and exceptional biodiversity. It plays a significant role in conserving endangered wildlife and maintaining the ecological balance of the Western Ghats, a UNESCO-recognized biodiversity hotspot.
+            </p>
+          </div>
+          
+          <div class="about-stats-panel reveal-right">
+            <div class="glance-card">
+              <h3>Reserve at a Glance</h3>
+              <div class="glance-grid">
+                <div class="glance-item">
+                  <span class="glance-label">Established</span>
+                  <span class="glance-val">5 January 2010</span>
+                </div>
+                <div class="glance-item">
+                  <span class="glance-label">Total Area</span>
+                  <span class="glance-val">1165.57 sq. km.</span>
+                </div>
+                <div class="glance-item">
+                  <span class="glance-label">Core Area</span>
+                  <span class="glance-val">600.12 sq. km.</span>
+                </div>
+                <div class="glance-item">
+                  <span class="glance-label">Buffer Area</span>
+                  <span class="glance-val">565.45 sq. km.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="districts-card">
+              <h4>Districts Covered</h4>
+              <p>Sahyadri Tiger Reserve extends across four districts of Maharashtra:</p>
+              <div class="districts-badges">
+                <span class="badge">Satara</span>
+                <span class="badge">Sangli</span>
+                <span class="badge">Kolhapur</span>
+                <span class="badge">Ratnagiri</span>
+              </div>
+              <p class="small-note">These districts together form a diverse landscape of forests, mountains, rivers, reservoirs, and wildlife habitats.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scrollytelling Section -->
+    <section id="scrolly-section" class="scrolly-container">
+      <div class="canvas-sticky-wrapper">
+        <div class="canvas-backdrop"></div>
+        <canvas id="tiger-canvas"></canvas>
+        <div class="canvas-instructions">
+          <div class="swipe-indicator">
+            <span class="arrow">←</span>
+            <span>Scroll to see the tiger walk</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </div>
+      <div class="scrolly-content">
+        <div class="story-card" id="card-1">
+          <span class="card-index">01</span>
+          <h3>Landscape & Geography</h3>
+          <p>The reserve consists of rugged mountain ranges, steep valleys, evergreen forests, semi-evergreen forests, grasslands, and freshwater ecosystems.</p>
+        </div>
+        <div class="story-card" id="card-2">
+          <span class="card-index">02</span>
+          <h3>Major Water Catchments</h3>
+          <p>The reserve has massive freshwater resources. Major water bodies include: the Koyna River, Warana River, Shivsagar Reservoir, and Vasant Sagar Reservoir.</p>
+        </div>
+        <div class="story-card" id="card-3">
+          <span class="card-index">03</span>
+          <h3>Ecological Watersheds</h3>
+          <p>These rivers and reservoirs provide essential water resources for wildlife throughout the year and contribute to the reserve's rich ecological diversity.</p>
+        </div>
+        <div class="story-card" id="card-4">
+          <span class="card-index">04</span>
+          <h3>Why Sahyadri Matters</h3>
+          <p>The Western Ghats are recognized globally as one of the world's most important biodiversity hotspots. Sahyadri protects ancient evergreen forests, rare plant species, endangered wildlife, and catchments that help regulate climate.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Biodiversity Section -->
+    <section id="biodiversity" class="biodiversity-section">
+      <div class="section-container">
+        <div class="center-text">
+          <span class="section-tag">Species & Flora</span>
+          <h2 class="section-title">Rich Biodiversity Hotspot</h2>
+          <p class="section-paragraph max-width-600">
+            Sahyadri Tiger Reserve is one of the richest biological areas in the Western Ghats, protecting unique terrestrial and aquatic ecosystems.
+          </p>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs-header">
+            <button class="tab-btn active" data-tab="flora">Flora</button>
+            <button class="tab-btn" data-tab="mammals">Mammals</button>
+            <button class="tab-btn" data-tab="birds">Birds</button>
+            <button class="tab-btn" data-tab="others">Other Fauna</button>
+          </div>
+          
+          <div class="tabs-content">
+            <!-- Flora Tab -->
+            <div class="tab-pane active" id="tab-flora">
+              <div class="tab-grid">
+                <div class="tab-text">
+                  <h3>Forest Flora & Rare Plants</h3>
+                  <p>The reserve provides a sanctuary to over 1,450 tree species and 400 medicinal plant species. These dense evergreen and semi-evergreen canopies form the primary habitat layer of the Northern Ghats.</p>
+                  <p>Important native trees include: <strong>Anjani, Jambhul, and Pisa</strong>.</p>
+                  <p>The forests also support several endemic flowering plants, including rare species of <strong>Ceropegia</strong>, which are found exclusively in the Western Ghats.</p>
+                </div>
+                <div class="tab-stats">
+                  <div class="big-stat">
+                    <span class="num">1,452</span>
+                    <span class="label">Tree Species</span>
+                  </div>
+                  <div class="big-stat">
+                    <span class="num">400</span>
+                    <span class="label">Medicinal Plants</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mammals Tab -->
+            <div class="tab-pane" id="tab-mammals">
+              <div class="tab-grid">
+                <div class="tab-text">
+                  <h3>Mammal Diversity (33 Species)</h3>
+                  <p>A diverse assembly of mammalian species roam the basalt ranges of Sahyadri. They include apex predators, large herbivores, and rare arboreal species.</p>
+                  <ul class="bullet-list">
+                    <li>Bengal Tiger</li>
+                    <li>Indian Leopard</li>
+                    <li>Indian Gaur</li>
+                    <li>Sloth Bear</li>
+                    <li>Sambar Deer</li>
+                    <li>Barking Deer</li>
+                    <li>Mouse Deer</li>
+                    <li>Wild Boar</li>
+                    <li>Indian Giant Squirrel</li>
+                    <li>Hanuman Langur</li>
+                  </ul>
+                </div>
+                <div class="tab-stats">
+                  <div class="big-stat">
+                    <span class="num">33</span>
+                    <span class="label">Mammal Species</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Birds Tab -->
+            <div class="tab-pane" id="tab-birds">
+              <div class="tab-grid">
+                <div class="tab-text">
+                  <h3>Avian Sanctuary (244 Species)</h3>
+                  <p>The skies and tree canopies are filled with an incredible diversity of birds. The area is a prime habitat for hornbills and forest thrushes.</p>
+                  <div class="birds-highlight">
+                    <strong>Notable Species:</strong>
+                    <span>Malabar Grey Hornbill</span> • 
+                    <span>Great Hornbill</span> • 
+                    <span>Indian Grey Hornbill</span> • 
+                    <span>Oriental Pied Hornbill</span> • 
+                    <span>Indian River Tern</span> • 
+                    <span>Crested Serpent Eagle</span> • 
+                    <span>Paradise Flycatcher</span> • 
+                    <span>Malabar Whistling Thrush</span>
+                  </div>
+                </div>
+                <div class="tab-stats">
+                  <div class="big-stat">
+                    <span class="num">244</span>
+                    <span class="label">Bird Species</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Others Tab -->
+            <div class="tab-pane" id="tab-others">
+              <div class="tab-grid-4col">
+                <div class="mini-stat-card">
+                  <div class="icon">🦋</div>
+                  <h4>Butterflies</h4>
+                  <div class="num">120</div>
+                  <p>Colorful species critical for pollination and maintaining balance.</p>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="icon">🦎</div>
+                  <h4>Reptiles</h4>
+                  <div class="num">44</div>
+                  <p>Including various snakes, lizards, and turtles across terrains.</p>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="icon">🐸</div>
+                  <h4>Amphibians</h4>
+                  <div class="num">22</div>
+                  <p>Frogs and toads flourishing in moist forests and catchments.</p>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="icon">🐟</div>
+                  <h4>Freshwater Fish</h4>
+                  <div class="num">50</div>
+                  <p>Native species maintaining the river and reservoir networks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecotourism Section -->
+    <section id="ecotourism" class="ecotourism-section">
+      <div class="section-container">
+        <div class="grid-2col">
+          <div class="ecotourism-info reveal-left">
+            <span class="section-tag">Ecotourism Zones</span>
+            <h2 class="section-title">Explore the Wilderness</h2>
+            <p class="section-paragraph">
+              Visitors can explore several designated ecotourism destinations within the reserve. Each zone offers unique landscapes, scenic viewpoints, deep forests, and wildlife habitats:
+            </p>
+            <div class="zones-grid">
+              <div class="zone-item"><strong>Kandat</strong></div>
+              <div class="zone-item"><strong>Bamnoli – Munavle</strong></div>
+              <div class="zone-item"><strong>Koyna – Helwak</strong></div>
+              <div class="zone-item"><strong>Paneri</strong></div>
+              <div class="zone-item"><strong>Chandoli</strong></div>
+              <div class="zone-item"><strong>Amba</strong></div>
+            </div>
+            
+            <div class="accommodation-info">
+              <h4>Local Accommodation Options</h4>
+              <p>Visitors can stay at various accommodation facilities located near the reserve, supporting local forest-dwelling communities:</p>
+              <ul class="bullet-list-horizontal">
+                <li>Private Tent Stay</li>
+                <li>Arav Village</li>
+                <li>Homestays</li>
+                <li>Shindi Village Accommodation</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-showcase reveal-right">
+            <div class="activities-card">
+              <h3>Visitor Experience</h3>
+              <p>Enjoy responsible, nature-based activities that support conservation:</p>
+              <ul class="activities-list">
+                <li><span>👁️</span> Wildlife Observation</li>
+                <li><span>📸</span> Nature Photography</li>
+                <li><span>🐦</span> Bird Watching</li>
+                <li><span>🌲</span> Forest Exploration</li>
+                <li><span>🌅</span> Scenic Viewpoints</li>
+                <li><span>🌱</span> Eco-Tourism</li>
+                <li><span>🏡</span> Village Tourism</li>
+                <li><span>🎓</span> Educational Visits</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conservation Importance Section -->
+    <section id="conservation" class="conservation-section">
+      <div class="section-container">
+        <div class="center-text">
+          <span class="section-tag">Our Objectives</span>
+          <h2 class="section-title">Conservation Importance</h2>
+          <p class="section-paragraph max-width-600">
+            Sahyadri Tiger Reserve plays a vital role in conserving the biodiversity of the Western Ghats and safeguarding critical watersheds.
+          </p>
+        </div>
+        
+        <div class="objectives-grid">
+          <div class="obj-card">
+            <h4>Tiger Conservation</h4>
+            <p>Direct protective actions to secure the future of the Bengal tiger in the northernmost range.</p>
+          </div>
+          <div class="obj-card">
+            <h4>Wildlife Protection</h4>
+            <p>24/7 monitoring and enforcement against poaching and forest crimes.</p>
+          </div>
+          <div class="obj-card">
+            <h4>Habitat Restoration</h4>
+            <p>Reclaiming fragmented zones and rebuilding endemic forest covers.</p>
+          </div>
+          <div class="obj-card">
+            <h4>Biodiversity Conservation</h4>
+            <p>Conserving the 1400+ flora and hundreds of fauna species in their native habitats.</p>
+          </div>
+          <div class="obj-card">
+            <h4>Ecological Research</h4>
+            <p>Scientific studies and camera trap surveys to guide forestry decisions.</p>
+          </div>
+          <div class="obj-card">
+            <h4>Sustainable Ecotourism</h4>
+            <p>Low-impact tours that fund community welfare and forestry protection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="section-container">
+        <div class="center-text">
+          <span class="section-tag">Visuals</span>
+          <h2 class="section-title">Natural Landscapes of the Reserve</h2>
+          <p class="section-paragraph max-width-600">
+            Experience the stunning, untouched habitats of the Northern Western Ghats.
+          </p>
+        </div>
+        
+        <div class="text-gallery-grid">
+          <div class="gallery-item-card">
+            <div class="gl-bg"></div>
+            <h4>Dense Evergreen Forests</h4>
+          </div>
+          <div class="gallery-item-card">
+            <div class="gl-bg"></div>
+            <h4>Mountain Valleys</h4>
+          </div>
+          <div class="gallery-item-card">
+            <div class="gl-bg"></div>
+            <h4>Wildlife & Fauna</h4>
+          </div>
+          <div class="gallery-item-card">
+            <div class="gl-bg"></div>
+            <h4>Rivers and Reservoirs</h4>
+          </div>
+          <div class="gallery-item-card">
+            <div class="gl-bg"></div>
+            <h4>Scenic Viewpoints</h4>
+          </div>
+          <div class="gallery-item-card">
+            <div class="gl-bg"></div>
+            <h4>Nature Trails</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Inquiry & Contact Section -->
+    <section id="inquiry" class="safari-section">
+      <div class="section-container">
+        <div class="safari-booking-card">
+          <div class="booking-grid">
+            <div class="booking-text-side">
+              <span class="section-tag">Plan Your Visit</span>
+              <h2 class="section-title dark-text">Connect with the Wilds</h2>
+              <p class="section-paragraph dark-text">
+                Book a trip to one of the ecotourism zones or get in touch with local forest offices for guidelines, safaris, and permission inquiries.
+              </p>
+              
+              <div class="contact-details-box">
+                <h4>Contact Offices</h4>
+                <div class="contact-card">
+                  <h5>Field Director Office</h5>
+                  <p>Kolhapur, Maharashtra</p>
+                  <p><strong>Phone:</strong> 0231-2542766</p>
+                  <p><strong>Email:</strong> ccfwlkolhapur@mahaforest.gov.in</p>
+                </div>
+                
+                <div class="contact-card">
+                  <h5>Deputy Director Office</h5>
+                  <p>Karad, Maharashtra</p>
+                  <p><strong>Phone:</strong> 02164-241711</p>
+                  <p><strong>Email:</strong> ddstrkarad@mahaforest.gov.in</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="booking-form-side">
+              <h3 class="form-title">Ecotourism Inquiry</h3>
+              <form id="safari-inquiry-form" class="inquiry-form">
+                <div class="form-group">
+                  <label for="name-input">Full Name</label>
+                  <input type="text" id="name-input" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="date-input">Inquiry Date</label>
+                    <input type="date" id="date-input" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="zone-select">Destination Zone</label>
+                    <select id="zone-select">
+                      <option value="kandat">Kandat</option>
+                      <option value="bamnoli">Bamnoli – Munavle</option>
+                      <option value="koyna">Koyna – Helwak</option>
+                      <option value="paneri" selected>Paneri</option>
+                      <option value="chandoli">Chandoli</option>
+                      <option value="amba">Amba</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="stay-select">Accommodation</label>
+                    <select id="stay-select">
+                      <option value="tent">Private Tent Stay</option>
+                      <option value="arav">Arav Village</option>
+                      <option value="homestay" selected>Homestays</option>
+                      <option value="shindi">Shindi Village</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="guests-input">Guests</label>
+                    <input type="number" id="guests-input" value="2" min="1" max="20">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email-input">Email Address</label>
+                  <input type="email" id="email-input" placeholder="you@example.com" required>
+                </div>
+
+                <button type="submit" id="submit-inquiry-btn" class="form-submit-btn">Send Inquiry</button>
+                <div id="form-message" class="form-message"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="section-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h2>Sahyadri Tiger Reserve</h2>
+            <p class="tagline">Protecting Wildlife. Conserving Nature. Inspiring Future Generations.</p>
+            <p class="desc">Explore the wild landscapes of the Northern Western Ghats and discover one of India's most treasured biodiversity hotspots, where conservation and nature exist in perfect harmony.</p>
+          </div>
+          <div class="footer-links-grid">
+            <div class="footer-links-col">
+              <h4>Quick Links</h4>
+              <a href="#hero">Home</a>
+              <a href="#about">About</a>
+              <a href="#scrolly-section">The Walk</a>
+              <a href="#biodiversity">Biodiversity</a>
+            </div>
+            <div class="footer-links-col">
+              <h4>Ecotourism</h4>
+              <a href="#ecotourism">Zones</a>
+              <a href="#ecotourism">Stay</a>
+              <a href="#inquiry">Inquiries</a>
+            </div>
+            <div class="footer-links-col">
+              <h4>Offices</h4>
+              <a href="#inquiry">Kolhapur Office</a>
+              <a href="#inquiry">Karad Office</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2026 Sahyadri Tiger Reserve. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
